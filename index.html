@@ -1,0 +1,49 @@
+<html>
+	<header>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+		<link type="text/css" rel="stylesheet" href="styles/styles.css">
+	</header>
+	<head>
+		<h1>Binance trading Bot -- NodeJS</h1>
+	</head>
+
+	<body>
+
+		<section>
+			<div>
+				<h1>BTC: <span id="price_stream_bitcoin"></span></h1>
+				<h1>ETH: <span id="price_stream_ether"></span></h1>
+			</div>
+		</section>
+
+		<section>
+
+			<h2>Trades</h2>
+			<div id="chart"></div>
+
+			<div id="trades">---</div>
+
+		</section>
+
+		<section>
+	
+			<h3>Settings</h3>
+			<div>
+				<input type="checkbox" name="rsi_indicator">
+				<label>RSI</label>
+				<input type="text" name="rsi_length" id="rsi_length" placeholder="18">
+				<label>Overbought</label>
+				<input type="text" name="rsi_overbought" id="rsi_overbought" placeholder="70">
+				<label>Oversold</label>
+				<input type="text" name="rsi_oversold" id="rsi_oversold" placeholder="30">
+			</div>
+
+		</section> 
+
+
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="charts/chart.js"></script>
+		<script type="text/javascript" src="app/websockets.js"></script>
+	</body>
+</html>

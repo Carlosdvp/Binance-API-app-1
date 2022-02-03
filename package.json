@@ -1,0 +1,27 @@
+{
+  "name": "binance-trading-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "binance-api-node": "^0.11.5",
+    "ccxt": "^1.53.14",
+    "crypto": "^1.0.1",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "http-server": "^0.12.3",
+    "json-2-csv": "^3.14.1",
+    "node-binance-api": "^0.12.5",
+    "qs": "^6.5.2",
+    "ws": "^7.5.3",
+    "wscat": "^4.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
